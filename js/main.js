@@ -392,15 +392,15 @@ let searchInput = document.getElementById("filterMeal"),
 function searchMeal() {
   for (let i = 0; i < singleMeal.length; i++) {
     singleMeal[i].classList.add("hide");
+    cols[i].classList.remove("order-first");
     if (document.querySelector(".nav-link.active").innerText === "All") {
-      cols[i].style.order = "0";
       if (
         recipeTitle[i].innerText
           .toLowerCase()
           .includes(searchInput.value.toLowerCase()) === true
       ) {
         singleMeal[i].classList.remove("hide", "order-0");
-        cols[i].style.order = "-2";
+        cols[i].classList.add("order-first");
       }
     } else if (document.querySelector(".nav-link.active").innerText !== "All") {
       // filter meals on search
@@ -408,7 +408,6 @@ function searchMeal() {
         singleMeal[i].getAttribute("mealType") ===
         document.querySelector(".nav-link.active").innerText
       ) {
-        cols[i].classList.remove("order-first");
         if (
           recipeTitle[i].innerText
             .toLowerCase()
