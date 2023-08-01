@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes Filter Section</title>
+    <!-- Google FONTS lINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awsome Link -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Bootstrap Css Link -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Main Css Link -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- start of main sec -->
+    <main class="my-5">
+      <div class="container-sm">
+        <div class="mainContent">
+          <h1 class="secTitle mx-auto position-relative text-black">Meals</h1>
+          <ul
+            class="nav nav-pills my-4 text-center d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <button class="nav-link active fw-bold text-capitalize">
+                all
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link fw-bold text-capitalize">pasta</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link fw-bold text-capitalize">burger</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link fw-bold text-capitalize">salads</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link fw-bold text-capitalize">drinks</button>
+            </li>
+          </ul>
+          <div
+            class="form-input d-flex flex-column flex-sm-row justify-content-between align-items-center mx-auto gap-3"
+          >
+            <label for="filterMeal" class="fw-bold w-100 text-center"
+              >Search a Meal:</label
+            >
+            <input type="text" class="form-control w-100" id="filterMeal" />
+          </div>
+          <div class="meals mt-5">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="single-meal card rounded-3 overflow-hidden shadow-sm"
+                  mealType="Pasta"
+                >
+                  <div class="card-img overflow-hidden">
+                    <img
+                      src="./imgs/pasta/Tortellini-pasta1.jpg"
+                      alt="Tortellini pasta"
+                      class="w-100 rounded-top-3"
+                    />
+                  </div>
+                  <div
+                    class="card-content p-3 d-flex justify-content-between align-items-center"
+                  >
+                    <h2 class="fw-bolder mealTitle text-capitalize">
+                      Tortellini Pasta
+                    </h2>
+                    <div
+                      class="rounded-circle border border-3 plusIcon d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="single-meal card rounded-3 overflow-hidden shadow-sm"
+                  mealType="Burger"
+                >
+                  <div class="card-img overflow-hidden">
+                    <img
+                      src="./imgs/burger/single-beef-burger1.jpg"
+                      alt="Single Beef Burger"
+                      class="w-100 rounded-top-3"
+                    />
+                  </div>
+                  <div
+                    class="card-content p-3 d-flex justify-content-between align-items-center"
+                  >
+                    <h2 class="fw-bolder mealTitle text-capitalize">
+                      Single Beef Burger
+                    </h2>
+                    <div
+                      class="rounded-circle border border-3 plusIcon d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="single-meal card rounded-3 overflow-hidden shadow-sm"
+                  mealType="Salads"
+                >
+                  <div class="card-img overflow-hidden">
+                    <img
+                      src="./imgs/salads/green-salad1.jpg"
+                      alt="Green Salad"
+                      class="w-100 rounded-top-3"
+                    />
+                  </div>
+                  <div
+                    class="card-content p-3 d-flex justify-content-between align-items-center"
+                  >
+                    <h2 class="fw-bolder mealTitle text-capitalize">
+                      Green Salad
+                    </h2>
+                    <div
+                      class="rounded-circle border border-3 plusIcon d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="single-meal card rounded-3 overflow-hidden shadow-sm"
+                  mealType="Drinks"
+                >
+                  <div class="card-img overflow-hidden">
+                    <img
+                      src="./imgs/drinks/orange-juice1.jpg"
+                      alt="Orange Juice"
+                      class="w-100 rounded-top-3"
+                    />
+                  </div>
+                  <div
+                    class="card-content p-3 d-flex justify-content-between align-items-center"
+                  >
+                    <h2 class="fw-bolder mealTitle text-capitalize">
+                      Orange Juice
+                    </h2>
+                    <div
+                      class="rounded-circle border border-3 plusIcon d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="single-meal card rounded-3 overflow-hidden shadow-sm"
+                  mealType="Pasta"
+                >
+                  <div class="card-img overflow-hidden">
+                    <img
+                      src="./imgs/pasta/tomato-sauce1.jpg"
+                      alt="Tomato Sauce pasta"
+                      class="w-100 rounded-top-3"
+                    />
+                  </div>
+                  <div
+                    class="card-content p-3 d-flex justify-content-between align-items-center"
+                  >
+                    <h2 class="fw-bolder mealTitle text-capitalize">
+                      Tomato Sauce Pasta
+                    </h2>
+                    <div
+                      class="rounded-circle border border-3 plusIcon d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="single-meal card rounded-3 overflow-hidden shadow-sm"
+                  mealType="Burger"
+                >
+                  <div class="card-img overflow-hidden">
+                    <img
+                      src="./imgs/burger/double-beef-burger1.jpg"
+                      alt="Double Beef Burger"
+                      class="w-100 rounded-top-3"
+                    />
+                  </div>
+                  <div
+                    class="card-content p-3 d-flex justify-content-between align-items-center"
+                  >
+                    <h2 class="fw-bolder mealTitle text-capitalize">
+                      Double Beef Burger
+                    </h2>
+                    <div
+                      class="rounded-circle border border-3 plusIcon d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="single-meal card rounded-3 overflow-hidden shadow-sm"
+                  mealType="Salads"
+                >
+                  <div class="card-img overflow-hidden">
+                    <img
+                      src="./imgs/salads/potato-salad1.jpg"
+                      alt="Potato Salad"
+                      class="w-100 rounded-top-3"
+                    />
+                  </div>
+                  <div
+                    class="card-content p-3 d-flex justify-content-between align-items-center"
+                  >
+                    <h2 class="fw-bolder mealTitle text-capitalize">
+                      Potato Salad
+                    </h2>
+                    <div
+                      class="rounded-circle border border-3 plusIcon d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="single-meal card rounded-3 overflow-hidden shadow-sm"
+                  mealType="Drinks"
+                >
+                  <div class="card-img overflow-hidden">
+                    <img
+                      src="./imgs/drinks/cola1.jpg"
+                      alt="Cola"
+                      class="w-100 rounded-top-3"
+                    />
+                  </div>
+                  <div
+                    class="card-content p-3 d-flex justify-content-between align-items-center"
+                  >
+                    <h2 class="fw-bolder mealTitle text-capitalize">Cola</h2>
+                    <div
+                      class="rounded-circle border border-3 plusIcon d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="single-meal card rounded-3 overflow-hidden shadow-sm"
+                  mealType="Pasta"
+                >
+                  <div class="card-img overflow-hidden">
+                    <img
+                      src="./imgs/pasta/meatballs1.jpg"
+                      alt="Meat Balls pasta"
+                      class="w-100 rounded-top-3"
+                    />
+                  </div>
+                  <div
+                    class="card-content p-3 d-flex justify-content-between align-items-center"
+                  >
+                    <h2 class="fw-bolder mealTitle text-capitalize">
+                      Meat Balls Pasta
+                    </h2>
+                    <div
+                      class="rounded-circle border border-3 plusIcon d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="single-meal card rounded-3 overflow-hidden shadow-sm"
+                  mealType="Burger"
+                >
+                  <div class="card-img overflow-hidden">
+                    <img
+                      src="./imgs/burger/chicken-burger1.jpg"
+                      alt="Chicken Burger"
+                      class="w-100 rounded-top-3"
+                    />
+                  </div>
+                  <div
+                    class="card-content p-3 d-flex justify-content-between align-items-center"
+                  >
+                    <h2 class="fw-bolder mealTitle text-capitalize">
+                      Chicken Burger
+                    </h2>
+                    <div
+                      class="rounded-circle border border-3 plusIcon d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="single-meal card rounded-3 overflow-hidden shadow-sm"
+                  mealType="Drinks"
+                >
+                  <div class="card-img overflow-hidden">
+                    <img
+                      src="./imgs/drinks/coffeecup1.jpg"
+                      alt="Coffee"
+                      class="w-100 rounded-top-3"
+                    />
+                  </div>
+                  <div
+                    class="card-content p-3 d-flex justify-content-between align-items-center"
+                  >
+                    <h2 class="fw-bolder mealTitle text-capitalize">Coffee</h2>
+                    <div
+                      class="rounded-circle border border-3 plusIcon d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="single-meal card rounded-3 overflow-hidden shadow-sm"
+                  mealType="Salads"
+                >
+                  <div class="card-img overflow-hidden">
+                    <img
+                      src="./imgs/salads/fruit-salad1.jpg"
+                      alt="Fruit Salad"
+                      class="w-100 rounded-top-3"
+                    />
+                  </div>
+                  <div
+                    class="card-content p-3 d-flex justify-content-between align-items-center"
+                  >
+                    <h2 class="fw-bolder mealTitle text-capitalize">
+                      Fruit Salad
+                    </h2>
+                    <div
+                      class="rounded-circle border border-3 plusIcon d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="single-meal card rounded-3 overflow-hidden shadow-sm"
+                  mealType="Drinks"
+                >
+                  <div class="card-img overflow-hidden">
+                    <img
+                      src="./imgs/drinks/teacup1.jpg"
+                      alt="Tea"
+                      class="w-100 rounded-top-3"
+                    />
+                  </div>
+                  <div
+                    class="card-content p-3 d-flex justify-content-between align-items-center"
+                  >
+                    <h2 class="fw-bolder mealTitle text-capitalize">Tea</h2>
+                    <div
+                      class="rounded-circle border border-3 plusIcon d-flex justify-content-center align-items-center"
+                    >
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- end of main section -->
+
+    <!-- start of meal box -->
+    <div
+      id="box"
+      class="position-fixed top-0 start-0 end-0 bottom-0 justify-content-center align-items-center d-none"
+    >
+      <div class="mealContent mx-auto text-center position-relative">
+        <div class="closeBtn position-absolute">
+          <i class="fa-solid fa-xmark text-light p-2"></i>
+        </div>
+        <div class="mealImgs position-relative">
+          <img alt="" class="w-100" />
+          <div class="sliderBtns">
+            <button class="btn position-absolute top-50 btnRight">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <button class="btn position-absolute top-50 btnLeft">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+          </div>
+        </div>
+        <div class="meal-desc bg-light py-4">
+          <h3 class="text-black text-capitalize mealhead fw-bold">
+            meat Balls pasta
+          </h3>
+          <p class="m-0 mealDesc text-capitalize">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+            fugit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end of meal box -->
+    <!-- Bootstrap Js File -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Main Js File -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

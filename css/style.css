@@ -1,0 +1,208 @@
+/* start of general styling */
+:root {
+  --primaryColor: rgb(255, 118, 0);
+  --primaryShadow: rgba(255, 118, 0, 0.7);
+}
+
+body {
+  font-family: "Merienda", cursive;
+}
+/* end of general styling */
+
+/* start of common styling */
+.single-meal .card-img img,
+.plusIcon,
+.closeBtn i {
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+/* end of common styling */
+
+/* start of main section */
+.nav-link.active {
+  background-color: var(--primaryColor) !important;
+}
+
+.nav-link:not(.nav-link.active) {
+  color: black !important;
+}
+
+.nav-link {
+  font-size: 17px !important;
+}
+
+.secTitle {
+  font-weight: 800;
+  width: fit-content;
+}
+
+.secTitle::after {
+  content: "";
+  background-color: var(--primaryColor);
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+  transition: height 300ms;
+}
+
+.secTitle:hover::after {
+  height: 60%;
+}
+
+.form-input {
+  width: 65%;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem var(--primaryShadow) !important;
+  border-color: transparent !important;
+}
+
+.mealTitle {
+  font-size: calc(1rem + 0.3vw) !important;
+}
+
+.single-meal .card-img img {
+  transition: transform 700ms;
+  height: 250px !important;
+}
+
+.single-meal:hover .card-img img {
+  transform: scale(1.2);
+}
+
+.plusIcon {
+  border-color: var(--primaryColor) !important;
+  width: 30px;
+  height: 30px;
+  transition: background-color 300ms, color 300ms;
+}
+
+.plusIcon i {
+  font-size: 20px;
+}
+
+.plusIcon:hover {
+  background-color: var(--primaryColor) !important;
+  color: white !important;
+}
+
+.card.shadow-sm {
+  box-shadow: 0 0 0.5rem 0.07rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* start of navs & tabs */
+
+/* end of navs & tabs */
+
+/* start of media query of main sec */
+@media screen and (min-width: 567px) {
+  .form-input label {
+    width: 40% !important;
+  }
+  .form-input .form-control {
+    width: 60% !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form-input label {
+    width: 30% !important;
+  }
+  .form-input .form-control {
+    width: 70% !important;
+  }
+  .single-meal .card-img img {
+    height: 200px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .single-meal .card-img img {
+    height: 250px !important;
+  }
+}
+/* end of media query of main sec */
+/* end of main section */
+
+/* start of meal box */
+#box {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mealImgs img {
+  height: 300px !important;
+}
+
+.mealContent {
+  width: 80% !important;
+}
+
+.btnRight {
+  right: -30px;
+}
+
+.btnLeft {
+  left: -30px;
+}
+
+.sliderBtns i {
+  color: var(--primaryColor) !important;
+}
+
+.sliderBtns i,
+.fa-xmark {
+  font-size: 25px;
+}
+
+.closeBtn {
+  top: -50px;
+  right: -25px;
+}
+
+.closeBtn i {
+  transition: color 300ms;
+}
+
+.closeBtn i:hover {
+  color: var(--primaryColor) !important;
+}
+
+.mealhead {
+  font-size: calc(1rem + 0.2vw) !important;
+}
+
+.mealDesc {
+  font-size: calc(0.8rem + 0.2vw);
+}
+/* start of media query of meal box */
+@media screen and (min-width: 567px) {
+  .mealContent {
+    width: 70% !important;
+  }
+  .btnRight {
+    right: -50px;
+  }
+
+  .btnLeft {
+    left: -50px;
+  }
+  .closeBtn {
+    top: -50px;
+    right: -70px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mealContent {
+    width: 40% !important;
+  }
+}
+
+/* end of media query of meal box */
+/* end of meal box */
